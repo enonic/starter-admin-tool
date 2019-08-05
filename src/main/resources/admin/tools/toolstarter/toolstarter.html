@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <title>Admin tool starter</title>
 
-    <!-- Common style and library used by the Launcher Panel -->
-    <link rel="stylesheet" type="text/css" href="{{assetsUrl}}/admin/common/styles/_all.css">
-
-    <!-- Append the Admin libraries -->
-    <script type="text/javascript" src="{{assetsUrl}}/admin/common/lib/_all.js"></script>
-
     <!-- App bar style -->
     <link rel="stylesheet" type="text/css" href="{{assetsUrl}}/styles/toolstarter.css">
+
 </head>
 <body>
 
@@ -32,12 +27,13 @@
     };
 </script>
 
-<!-- Append the Admin UI -->
-<script type="text/javascript" src="{{assetsUrl}}/admin/common/js/_all.js"></script>
+<!-- Append the Admin libraries -->
+<script type="text/javascript" src="{{assetsUrl}}/admin/common/lib/_all.js"></script>
+<script type="text/javascript" src="{{assetsUrl}}/admin/common/js/_all.js" defer></script>
 
 
 <!-- Append the launcher -->
-<script type="text/javascript" src="{{launcherPath}}" async></script>
+<script type="text/javascript" src="{{launcherPath}}" defer></script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 var portalLib = require('/lib/xp/portal');
-var mustacheLib = require('/lib/xp/mustache');
+var mustacheLib = require('/lib/mustache');
 var adminLib = require('/lib/xp/admin');
 
 exports.get = function (req) {

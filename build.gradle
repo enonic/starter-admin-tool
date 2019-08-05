@@ -1,5 +1,6 @@
 plugins {
-    id 'com.enonic.xp.app' version '1.0.17'
+    id 'com.enonic.defaults' version '2.0.1'
+    id 'com.enonic.xp.app' version '2.0.0'
 }
 
 app {
@@ -8,12 +9,12 @@ app {
     vendorName = 'Enonic AS'
     vendorUrl = 'http://enonic.com'
     systemVersion = "${xpVersion}"
+    systemApp = true
 }
 
 dependencies {
     compile "com.enonic.xp:core-api:${xpVersion}"
     compile "com.enonic.xp:portal-api:${xpVersion}"
-    include "com.enonic.xp:lib-mustache:${xpVersion}"
     include "com.enonic.xp:lib-portal:${xpVersion}"
     include "com.enonic.xp:lib-admin:${xpVersion}"
     //include "com.enonic.xp:lib-auth:${xpVersion}"
@@ -29,6 +30,7 @@ dependencies {
     //include "com.enonic.xp:lib-websocket:${xpVersion}"
     //include "com.enonic.xp:lib-xslt:${xpVersion}"
     include "com.enonic.lib:lib-admin-ui:${libAdminUiVersion}"
+    include "com.enonic.lib:lib-mustache:2.0.0"
 }
 
 repositories {
