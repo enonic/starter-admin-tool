@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Admin tool starter</title>
-
-    <!-- App bar style -->
-    <link rel="stylesheet" type="text/css" href="{{assetsUrl}}/styles/toolstarter.css">
-
-    <link rel="stylesheet" type="text/css" href="{{assetsUrl}}/admin/common/styles/lib.css">
-    <script type="text/javascript" src="{{assetsUrl}}/admin/common/js/lib.js" defer></script>
-
+  <meta charset="UTF-8">
+  <title>Admin tool starter</title>
+<!--
+  Not used for anything in this starter yet.
+  <link rel="stylesheet" type="text/css" href="{{assetsUrl}}/styles/toolstarter.css">
+-->
+  <link rel="stylesheet" type="text/css" href="{{assetsUrl}}/admin/common/styles/lib.css">
+<!--
+  Not used for anything in this starter yet.
+  <script defer src="{{assetsUrl}}/admin/common/js/lib.js" type="text/javascript"></script>
+-->
 </head>
 <body>
-
-<!-- App bar -->
-<div class="app-bar">
-    <div class="app-button">
-        <img class="app-icon" src="{{assetsUrl}}/icons/application.svg"/>
-        <span class="app-title">Admin tool starter</span>
+  <div class="appbar">
+    <div class="home-button app-icon system-info-button">
+      <img class="app-icon" src="{{assetsUrl}}/icons/application.svg"/>
+      <span class="app-name">Admin tool starter</span>
     </div>
-</div>
-
-<!-- Appends the Launcher Panel to the document body -->
-<script>
+  </div>
+  <script>
     var CONFIG = {
-        adminUrl: '{{adminUrl}}',
-        appId: 'toolstarter',
-        launcherUrl: '{{launcherUrl}}',
-        services: {}, // Workaround for i18nUrl BUG
+      //adminUrl: '{{adminUrl}}', // Not needed?
+      //appId: 'toolstarter', // Not needed?
+      launcherUrl: '{{launcherUrl}}', // Required for lanucher
+      services: {}, // Workaround for i18nUrl BUG
     };
-</script>
-
-<!-- Append the launcher -->
-<script type="text/javascript" src="{{launcherPath}}" defer></script>
-
+  </script>
+  <script defer src="{{launcherPath}}" type="text/javascript"></script>
 </body>
 </html>
