@@ -9,7 +9,6 @@ app {
     vendorName = "${vendorName}"
     vendorUrl = "${vendorUrl}"
     systemVersion = "${xpVersion}"
-    systemApp = true
 }
 
 dependencies {
